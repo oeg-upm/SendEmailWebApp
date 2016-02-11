@@ -1,0 +1,6 @@
+#This is a comment.
+#Each line is a banned IP.
+#Example:
+#127.0.0.1
+#1.12.123.123
+
