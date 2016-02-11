@@ -40,7 +40,7 @@ Properties description:
 - mail.host.port: Is the port of smtp server.
 - mail.host.user: Is the user of smtp server.
 - mail.host.password: Is the user of smtp server.
-- mail.message.header: Is the header added to message for more info to destinatary. This param have reserved words (Replaced by webapp data):\
+- mail.message.header: Is the header added to message for more info to destinatary. This param have reserved words (Replaced by webapp data):
 -- %FULLNAME%: Fullname specified in formulary.
 -- %IP%: The client ip that send the email.
 -- %MESSAGE%: The specified message in formulary.
