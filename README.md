@@ -17,7 +17,8 @@ mvn install
 ### Usage
 1) Configure webapp.  
 2) (Optional) add your own language pack.  
-3) Deploy the webapp in a tomcat server.  
+3) (Optional) add banned ips.
+4) Deploy the webapp in a tomcat server.  
 
 ##### 1) Configure Webapp.
 Go to target/SendEmailWebApp/WEB-INF folder.  
@@ -59,7 +60,16 @@ Example lines of languaje file:
 > key=value to translate  
 > not.change=This is a example  
 
-##### 3) Deploy the webapp in a tomcat server.
+##### 3) (Optional) add banned ips.
+Go to target/SnedEmailWebApp/WEB-INF/bannedIPs.txt  
+Each line is a banned ip. If you want to add comments put "#" character and line start.    
+Example file:
+> \#This is a comment.  
+> \#Each line is a banned IP.  
+> \#Ip hacker attacks:  
+> 1.12.123.123    
+
+##### 4) Deploy the webapp in a tomcat server.
 Copy the target/SendEmailWebApp folder to a tomcat webapps folder.  
 Or compress it on a war file and deploy it by tomcat manager.  
 
