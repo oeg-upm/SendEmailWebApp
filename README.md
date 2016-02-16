@@ -61,7 +61,7 @@ Example lines of languaje file:
 > not.change=This is a example  
 
 ##### 3) (Optional) add banned ips.
-Go to target/SnedEmailWebApp/WEB-INF/bannedIPs.txt  
+Go to target/SendEmailWebApp/WEB-INF/bannedIPs.txt  
 Each line is a banned ip. If you want to add comments put "#" character and line start.    
 Example file:
 > \#This is a comment.  
