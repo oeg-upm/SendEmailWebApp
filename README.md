@@ -11,13 +11,13 @@ This page is designed to be added at other page and the people can send emails a
 ### Compile
 Type in a cmd or console:
 ```sh
-mvn install
+mvn clean install
 ```
 
 ### Usage
 1) Configure webapp.  
 2) (Optional) add your own language pack.  
-3) (Optional) add banned ips.
+3) (Optional) add banned ips.  
 4) Deploy the webapp in a tomcat server.  
 
 ##### 1) Configure Webapp.
