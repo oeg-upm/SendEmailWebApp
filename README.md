@@ -29,6 +29,7 @@ Example of configuration.properties:
 > mail.host.port=TO_CHANGE  
 > mail.host.user=TO_CHANGE  
 > mail.host.password=TO_CHANGE  
+> mail.ttls.enable=false  
 > mail.message.header=%FULLNAME% sent you, from Web=TO_CHANGE and IP=%IP%, the next message: %MESSAGE%  
 > server.mail.limit=5  
 > server.mail.limit.interval.hours=24  
@@ -41,6 +42,7 @@ Properties description:
 - mail.host.port: Is the port of smtp server.  
 - mail.host.user: Is the user of smtp server.  
 - mail.host.password: Is the user of smtp server.  
+- mail.ttls.enable: If smtp server have TTLs then this parameter is "true". Values "false", "true".   
 - mail.message.header: Is the header added to message for more info to destinatary. This param have reserved words (Replaced by webapp data):  
 -- %FULLNAME%: Fullname specified in formulary.  
 -- %IP%: The client ip that send the email.  
