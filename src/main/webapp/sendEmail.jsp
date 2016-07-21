@@ -68,7 +68,7 @@ try{
 		Properties propiedades = new Properties();
 
 		propiedades.put("mail.smtp.auth", "true");
-		propiedades.put("mail.smtp.starttls.enable", "false");
+		propiedades.put("mail.smtp.starttls.enable", Config.getTtlsEnable());
 		propiedades.put("mail.smtp.host", Config.getMailHost());
 		propiedades.put("mail.smtp.port", Config.getMailPort());
 

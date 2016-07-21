@@ -20,6 +20,7 @@ public class Config {
 	private static String loginUsername=null;
 	private static String loginPassword=null;
 	private static String messageHeader=null;
+	private static String ttls_enable = "false";
 	private static IPManager ipManager= null;
 	
 	private static Map<Locale,ResourceBundle> allMessages = new HashMap<Locale,ResourceBundle>();
@@ -35,6 +36,7 @@ public class Config {
 			loginUsername = prop.getProperty(ParameterNames.MAIL_USER);
 			loginPassword = prop.getProperty(ParameterNames.MAIL_PASSWORD);
 			messageHeader = prop.getProperty(ParameterNames.MAIL_HEADER);	
+			ttls_enable = prop.getProperty(ParameterNames.MAIL_TTLS);
 			int mailExpiredTimeHours = Integer.valueOf(prop.getProperty(ParameterNames.EXPIRED_TIME_MAILS));
 			int limitMails = Integer.valueOf(prop.getProperty(ParameterNames.LIMIT_MAILS));
 			int trysExpiredTimeHours = Integer.valueOf(prop.getProperty(ParameterNames.TRYS_INTERVAL));
@@ -50,23 +52,26 @@ public class Config {
 				loginPassword == null || messageHeader == null){
 			initConfig();
 			String errors = "";
-			if(destinatary == null){
+			if(destinatary == null || destinatary.isEmpty()){
 				errors += "\nProblems with obtain "+ParameterNames.DESTINATARY+" from configuration.properties";
 			}
-			if(mailHost == null){
+			if(mailHost == null || mailHost.isEmpty()){
 				errors += "\nProblems with obtain "+ParameterNames.MAIL_HOST+" from configuration.properties";
 			}
-			if(mailPort == null){
+			if(mailPort == null || mailPort.isEmpty()){
 				errors += "\nProblems with obtain "+ParameterNames.MAIL_PORT+" from configuration.properties";
 			}
-			if(loginUsername == null){
+			if(loginUsername == null || loginUsername.isEmpty()){
 				errors += "\nProblems with obtain "+ParameterNames.MAIL_USER+" from configuration.properties";
 			}
-			if(loginPassword== null){
+			if(loginPassword== null || loginPassword.isEmpty()){
 				errors += "\nProblems with obtain "+ParameterNames.MAIL_PASSWORD+" from configuration.properties";
 			}
-			if(messageHeader == null){
+			if(messageHeader == null || messageHeader.isEmpty()){
 				errors += "\nProblems with obtain "+ParameterNames.MAIL_HEADER+" from configuration.properties";
+			}
+			if(ttls_enable == null || ttls_enable.isEmpty()){
+				errors += "\nProblems with obtain "+ParameterNames.MAIL_TTLS+" from configuration.properties";
 			}
 			if(errors.isEmpty()){
 				return null;
@@ -194,6 +199,9 @@ public class Config {
 	public static String getLoginPassword() {
 		if(loginPassword== null){initConfig();}
 		return loginPassword;
+	}
+	public static String getTtlsEnable(){
+		return ttls_enable;
 	}
 	public static String getMailMessage(String name,String message) {
 		if(messageHeader == null){initConfig();}

@@ -6,6 +6,7 @@ public class ParameterNames {
 	public static final String MAIL_PORT = "mail.host.port";
 	public static final String MAIL_USER= "mail.host.user";
 	public static final String MAIL_PASSWORD = "mail.host.password";
+	public static final String MAIL_TTLS = "mail.ttls.enable";
 	public static final String MAIL_HEADER = "mail.message.header";
 	public static final String LIMIT_MAILS = "server.mail.limit";
 	public static final String EXPIRED_TIME_MAILS = "server.mail.limit.interval.hours";
