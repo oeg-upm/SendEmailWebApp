@@ -8,7 +8,7 @@
 [![Java Mail](https://img.shields.io/badge/Java%20Mail-1.5.5-40c4ff.svg)](www.oracle.com/technetwork/java/javamail/) 
 [![Simple Captcha](https://img.shields.io/badge/Simple%20Captcha-1.2.1-40c4ff.svg)](simplecaptcha.sourceforge.net/)  
 [![Build Maven](https://img.shields.io/badge/build-Maven-lightgrey.svg)](https://maven.apache.org/)
-[![Version 0.1](https://img.shields.io/badge/Version-0.1%20Beta-lightgrey.svg)](#version)  
+[![Version 0.0.1](https://img.shields.io/badge/Version-0.0.1-lightgrey.svg)](#version)  
 
 # SendEmailWebApp
 
