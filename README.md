@@ -1,3 +1,15 @@
+[![Code HTML](https://img.shields.io/badge/code-HTML-blue.svg)](https://www.w3.org/TR/html/)
+[![Code CSS](https://img.shields.io/badge/code-CSS-blue.svg)](https://www.w3.org/Style/CSS/)
+[![Code JS](https://img.shields.io/badge/code-JS-blue.svg)](http://www.w3schools.com/js/)
+[![Desgin Responsive](https://img.shields.io/badge/design-Responsive-blue.svg)](http://www.w3schools.com/html/html_responsive.asp)  
+[![lib jQuery](https://img.shields.io/badge/lib-jQuery-green.svg)](https://jquery.com/)
+[![i18n API? yes](https://img.shields.io/badge/i18n%20API%3F-yes-green.svg)](https://www.w3.org/standards/webdesign/i18n)  
+[![Java 1.7 or later](https://img.shields.io/badge/Java-1.7%20or%20later-40c4ff.svg)](https://www.java.com/es/download/help/index_installing.xml?j=7)
+[![Java Mail](https://img.shields.io/badge/Java%20Mail-1.5.5-40c4ff.svg)](www.oracle.com/technetwork/java/javamail/) 
+[![Simple Captcha](https://img.shields.io/badge/Simple%20Captcha-1.2.1-40c4ff.svg)](simplecaptcha.sourceforge.net/)  
+[![Build Maven](https://img.shields.io/badge/build-Maven-lightgrey.svg)](https://maven.apache.org/)
+[![Version 0.0.1](https://img.shields.io/badge/Version-0.0.1-lightgrey.svg)](#version)  
+
 # SendEmailWebApp
 
 SendEmailWebApp is a web application with a formulary to send emails to a specified destinatary.  
